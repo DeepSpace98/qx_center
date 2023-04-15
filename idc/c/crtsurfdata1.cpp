@@ -11,7 +11,7 @@ int main(int argc, char *argv[]){
   //inifile outpath logfile
   if(argc != 4){
     printf("Using:./crtsurfdata1 inifile outpath logfile\n");
-    printf("Example:/project/idc1/bin/crtsurfdata1 /project/idc1/ini/stcode.ini /tmp/surfdata /log/idc/crtsurfdata1.log\n\n");
+    printf("Example:/project/idc/bin/crtsurfdata1 /project/idc/ini/stcode.ini /tmp/surfdata /log/idc/crtsurfdata1.log\n\n");
 
     printf("inifile 全国气象站点参数文件名。\n");
     printf("outpath 全国气象站点数据文件存放的目录。\n");
@@ -20,7 +20,7 @@ int main(int argc, char *argv[]){
     return -1;
   }
 
-  if(logfile.Open(argv[3]) == false){
+  if(logfile.Open(argv[3], "a+", true) == false){
     printf("logfile.Open(%s) failed.\n", argv[3]);
     return -1;
   }

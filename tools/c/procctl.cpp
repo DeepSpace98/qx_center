@@ -10,7 +10,7 @@ int main(int argc,char *argv[])
   if (argc<3)
   {
     printf("Using:./procctl timetvl program argv ...\n");
-    printf("Example:/project/tools1/bin/procctl 5 /usr/bin/tar zcvf /tmp/tmp.tgz /usr/include\n\n");
+    printf("Example:/project/tools/bin/procctl 5 /usr/bin/tar zcvf /tmp/tmp.tgz /usr/include\n\n");
 
     printf("本程序是服务程序的调度程序，周期性启动服务程序或shell脚本。\n");
     printf("timetvl 运行周期，单位：秒。被调度的程序运行结束后，在timetvl秒后会被procctl重新启动。\n");

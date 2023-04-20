@@ -45,7 +45,7 @@ int main(int argc,char *argv[])
   {
     // 得到一个文件的信息，CDir.ReadDir()
     if (Dir.ReadDir()==false) break;
-printf("=%s=\n",Dir.m_FullFileName);  
+    printf("=%s=\n",Dir.m_FullFileName);  
     // 与超时的时间点比较，如果更早，就需要删除。
     if (strcmp(Dir.m_ModifyTime,strTimeOut)<0) 
     {

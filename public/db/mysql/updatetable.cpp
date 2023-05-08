@@ -62,7 +62,10 @@ int main(int argc,char *argv[])
     // 失败代码在stmt.m_cda.rc中，失败描述在stmt.m_cda.message中。
     if (stmt.execute()!=0)
     {
-      printf("stmt.execute() failed.\n%s\n%s\n",stmt.m_sql,stmt.m_cda.message); return -1;
+      printf("stmt.exec
+      
+      
+      u96te() failed.\n%s\n%s\n",stmt.m_sql,stmt.m_cda.message); return -1;
     }
 
     printf("成功修改了%ld条记录。\n",stmt.m_cda.rpc); // stmt.m_cda.rpc是本次执行SQL影响的记录数。
